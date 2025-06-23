@@ -1,0 +1,77 @@
+                                        JavaScript Operators
+Arithmetic Operator 
+Arithmetic Operators  perform mathematical calculations like addition, subtraction, multiplication, etc.
+Example:-
+const sum = 5 + 3; // Addition
+const diff = 10 - 2; // Subtraction
+const p = 4 * 2; // Multiplication
+const q = 8 / 2; // Division
+console.log(sum, diff, p, q);
+2.  Assignment Operators
+Assignment Operators  are used to assign values to variables. They can also perform operations like addition or multiplication before assigning the value.
+Example:
+let n = 10;
+n += 5;
+n *= 2;
+console.log(n);
+3.  Comparison Operators
+   Comparison Operators are used compare two values and return a boolean (true or false). They are useful for making decisions in conditional statements.
+Example:-
+     console.log(10 > 5);    console.log(10 === "10");
+4. Logical Operators
+Logical Operators are mainly used to perform the logical operations that determine the equality or difference between the values.
+Example:-
+const a = true, b = false;
+console.log(a && b); // Logical AND
+console.log(a || b); // Logical OR
+5.  Bitwise Operators
+Bitwise Operators perform operations on binary representations of numbers.
+Example:-
+         const res = 5 & 1; // Bitwise AND
+               console.log(res);
+6.  Ternary Operator
+Ternary Operatoris a shorthand for conditional statements. It takes three operands.
+Example:-
+const age = 18;
+const status = age >= 18 ? "Adult" : "Minor";
+console.log(status);
+
+
+
+
+
+
+
+
+                                              JavaScript Loops
+1. for Loop
+The for loop repeats a block of code a specific number of times. It contains initialization, condition, and increment/decrement in one line.
+Example:-
+                     for (let i = 1; i <= 3; i++) {
+                      console.log("Count:", i);
+                      }
+while loop
+The while loop executes as long as the condition is true. It can be thought of as a repeating if statement.
+Example:-
+let i = 0;
+while (i < 3) {
+    console.log("Number:", i);
+    i++;
+}
+
+3. do-while Loop
+The do-while loop is similar to while loop except it executes the code block at least once before checking the condition.
+Example:-
+let i = 0;
+do {
+    console.log("Iteration:", i);
+    i++;
+} while (i < 3);
+
+4. for-in Loop
+The for in loop is used to iterate over the properties of an object. It only iterate over keys of an object which have their enumerable property set to “true”.
+Example:-
+const obj = { name: "Ashish", age: 25 };
+for (let key in obj) {
+    console.log(key, ":", obj[key]);
+}
