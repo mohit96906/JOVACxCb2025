@@ -1,0 +1,121 @@
+//HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main id="blog-posts">
+    <!-- Posts will be added by JavaScript -->
+  </main>
+
+  <footer>
+    <p>© 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+/// CSS code
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+
+
+/// Java Script
+
+
+
+const posts = [
+  {
+    title: "Welcome to My Blog",
+    content: "This is the first post on my new blog. Stay tuned for more updates!"
+  },
+  {
+    title: "Why I Started Blogging",
+    content: "I started blogging to share my thoughts and learn from others."
+  },
+  {
+    title: "JavaScript Tips",
+    content: "JavaScript is a powerful tool for building interactive websites. Start small and experiment!"
+  }
+];
+
+const container = document.getElementById('blog-posts');
+
+posts.forEach(post => {
+  const postDiv = document.createElement('div');
+  postDiv.className = 'post';
+
+  const title = document.createElement('h2');
+  title.textContent = post.title;
+
+  const content = document.createElement('p');
+  content.textContent = post.content;
+
+  postDiv.appendChild(title);
+  postDiv.appendChild(content);
+
+  container.appendChild(postDiv);
+});
+
